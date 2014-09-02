@@ -1,5 +1,6 @@
-Cisco-UCS-Automation
-====================
+# Cisco UCS PowerShell Automation
+
+
 
 #### Python Script designed to automate the process of creating Cisco UCS PowerShell Cmdlets ####
 
@@ -7,4 +8,6 @@ Cisco-UCS-Automation
 
     - VLAN
     - Network Control Policy
+    
+Supported Python Version: [2.5](https://www.python.org/download/releases/2.5/)
 
