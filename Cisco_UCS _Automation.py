@@ -430,7 +430,6 @@ vlan_configuration()
 
 network_control_policy_configuration()
 
-
 powershell_final()
 
 
@@ -445,7 +444,6 @@ print '********'
 print ''
 print 'The PowerShell Script %s.ps1 has been successfully exported to %s!' % (project_name, current_directory)
 print ''
-print '********'
 # endregion
 
 
