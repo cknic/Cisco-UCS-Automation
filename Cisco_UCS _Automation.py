@@ -1,8 +1,7 @@
 # Cisco UCS PowerShell Script Automation
 # Author: Drew Russell
 
-# -*- coding: UTF-8 -*-
-import os, sys
+import os
 
 
 # region Intro Text
@@ -407,7 +406,6 @@ def powershell_network_control_policy():
 
 # endregion
 
-# endregion
 
 
 # region Start Script
@@ -433,14 +431,17 @@ network_control_policy_configuration()
 
 powershell_final()
 
+
 # endregion
 
 
 # region Exit Text
+#Get the current directory
+current_directory = str(os.getcwd())
 print ''
 print '********'
 print ''
-print 'The PowerShell Script %s.ps1 has been successfully exported to your current directory!' % project_name
+print 'The PowerShell Script %s.ps1 has been successfully exported to %s!' % (project_name, current_directory)
 print ''
 print '********'
 # endregion
