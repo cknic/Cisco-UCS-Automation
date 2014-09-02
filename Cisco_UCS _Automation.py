@@ -8,6 +8,7 @@ import os
 print ''
 print 'Cisco UCS PowerShell Automation'
 print 'Author: Drew Russell'
+print 'www.datacenterhandbook.com'
 print ''
 # endregion
 
