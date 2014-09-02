@@ -8,7 +8,7 @@ import os
 print ''
 print 'Cisco UCS PowerShell Automation'
 print 'Author: Drew Russell'
-print 'www.datacenterhandbook.com'
+print 'Website: www.datacenterhandbook.com'
 print ''
 # endregion
 
@@ -97,10 +97,12 @@ def powershell_final():
         power_shell = open(project_name+'.ps1', "w")
         power_shell.writelines(data)
 
+    # Complete the PowerShell Config and Disconnect from UCS
     power_shell = open(project_name+'.ps1', "a")
     power_shell.write(str('Complete-UcsTransaction') + "\n")
     power_shell.write(str('Disconnect-Ucs') + "\n")
     power_shell.write(str('') + "\n")
+    power_shell.close()
 
 
 def has_numbers(input_string):
@@ -161,8 +163,6 @@ def vlan_configuration():
 
         while option_vlan in ['no', 'n']:
                 break
-
-
 
 
 def vlan_input():
