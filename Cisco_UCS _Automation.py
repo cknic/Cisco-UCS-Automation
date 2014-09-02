@@ -99,6 +99,8 @@ def powershell_final():
 
     power_shell = open(project_name+'.ps1', "a")
     power_shell.write(str('Complete-UcsTransaction') + "\n")
+    power_shell.write(str('Disconnect-Ucs') + "\n")
+    power_shell.write(str('') + "\n")
 
 
 def has_numbers(input_string):
@@ -354,7 +356,7 @@ def network_control_policy_input():
         if network_control_policy_mac_register_mode == "native":
                 network_control_policy_mac_register_mode = 'only-native-vlan'
         elif network_control_policy_mac_register_mode == 'host':
-                network_control_policy_mac_register_mode = 'all-host-vlan'
+                network_control_policy_mac_register_mode = 'all-host-vlans'
 
         #Verify that the  Action on Uplink Fail field is populated with link-down or warning
         print ''
