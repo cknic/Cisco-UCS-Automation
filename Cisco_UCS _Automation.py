@@ -6,7 +6,7 @@ import os
 
 # region Intro Text
 print ''
-print 'Cisco UCS PowerShell Script Automation'
+print 'Cisco UCS PowerShell Automation'
 print 'Author: Drew Russell'
 print ''
 # endregion
@@ -141,25 +141,27 @@ def vlan_configuration():
                 vlan_type = raw_input('Which type of VLAN would you like to create (Global/Fabric A/Fabric B): ').lower()
                 print ''
 
+            #Prints PowerShell code to file depending on user input
+            if vlan_type in ['global']:
+                vlan_input()
+                powershell_vlan_global()
+
+            elif vlan_type in ['fabric a']:
+                print ''
+                vlan_input()
+                powershell_vlan_fabric('a')
+                vlan_second_fabric('b')
+
+            elif vlan_type in ['fabric b']:
+                print ''
+                vlan_input()
+                powershell_vlan_fabric('b')
+                vlan_second_fabric('a')
+
         while option_vlan in ['no', 'n']:
                 break
 
-        #Prints PowerShell code to file depending on user input
-        if vlan_type in ['global']:
-            vlan_input()
-            powershell_vlan_global()
 
-        elif vlan_type in ['fabric a']:
-            print ''
-            vlan_input()
-            powershell_vlan_fabric('a')
-            vlan_second_fabric('b')
-
-        elif vlan_type in ['fabric b']:
-            print ''
-            vlan_input()
-            powershell_vlan_fabric('b')
-            vlan_second_fabric('a')
 
 
 def vlan_input():
@@ -278,11 +280,11 @@ def network_control_policy_configuration():
             print ' * MAC Security'
             print ''
 
+            network_control_policy_input()
+            powershell_network_control_policy()
+
         while option_network_control_policy in ['no', 'n']:
                 break
-
-        network_control_policy_input()
-        powershell_network_control_policy()
 
 
 def network_control_policy_input():
@@ -405,7 +407,6 @@ def powershell_network_control_policy():
 
 
 # endregion
-
 
 
 # region Start Script
