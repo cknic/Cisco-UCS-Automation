@@ -43,5 +43,5 @@
     
 [Supported Python Version: 2.5](https://www.python.org/download/releases/2.5/)
 
-[Cisco UCS PowerTool Doumentation](https://www.python.org/download/releases/2.5/)
+[Cisco UCS PowerTool Documentation](https://www.python.org/download/releases/2.5/)
 
