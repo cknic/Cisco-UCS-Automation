@@ -27,15 +27,31 @@
     
 ###### Equipment: ######
 
-    - Coming Soon
+    - Port Type
     
 ###### Server: ######
 
-    - Coming Soon
+    - Service Profile Template
+    - Service Profile
+    - Policies
+        - BIOS
+        - Boot
+        - Host Firmware Packages
+        - Local Disk Config
+        - Maintenance
+    - Pools
+        - UUID Suffix
     
 ###### SAN: ######
 
-    - Coming Soon
+    - FC Port Channel
+    - FCoE Port Channel
+    - VSANs
+    - vHBA Template
+    - Pools
+        - IQN
+        - WWNN
+        - WWPn
 
 ###### Admin: ######
 
