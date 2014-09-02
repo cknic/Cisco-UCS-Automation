@@ -15,7 +15,7 @@
 
 ###### LAN: ######
     
-    - QoS System Class
+    - [ ] QoS System Class
     - QoS Policy
     - Port-Channel Creation
     - vNIC Templates
